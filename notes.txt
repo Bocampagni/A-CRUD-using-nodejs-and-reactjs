@@ -1,0 +1,17 @@
+O express nos ajuda a trabalhar com as rotas e com as views. Como em 99% dos casos vamos montar uma api rest, não usaremos
+a parte de views da lib.
+
+Nodemon - AutoRefresh no servidor. => {
+    npm install -D nodemon -> Salva como dependencia de desenvolvedor.
+
+    As dependencias de desenvolvedor só funcionam no momento do desenvolvimento. Quando subirmos a aplicação, não as teremos.
+
+    "dev": "nodemon server.js" - > Script para rodarmos o servidor com AutoRefresh. -> {
+        npm run dev
+    }
+}
+
+
+
+
+
