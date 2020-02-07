@@ -14,15 +14,6 @@ Nodemon - AutoRefresh no servidor. => {
 mongoose é um ORM de bancos não relacionais.
 ORM encapsula a lógica por trás das operações dos bancos de dados. Ao inves de usar querys, usa-se código js.
 
-
-
-
-
 requireDir -> Aplica um map de require em todos os arquivos de um dado caminho.
 
 
-modelo mvc, revisão: 
-
-model: Estrutura de dados dentro do banco de dados.
-view: views
-controller: 
