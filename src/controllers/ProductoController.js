@@ -5,7 +5,29 @@ const Product = mongoose.model('Product');
 
 module.exports = {
     async index(req, res){
-        const products = await Product.find();
+        const products = await Product.paginate();
         return res.json(products);
+    },
+
+    async store(req, res){
+        const products = await Product.create(req.body);
+        return res.json(products);
+    },
+
+    async show(req, res){
+        const products = await Product.findById(req.params.id);
+        return res.json(products);
+    },
+
+    async update(req, res){
+        const products = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true}); //Mongoose retorna o produto atualizado com o new: true
+        return res.json(products);
+    },
+
+    async destroy(req, res){
+        await Product.findByIdAndRemove(req.params.id);
+        return res.send();
     }
+
+   
 }
